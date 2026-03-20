@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paully D - Post Archive</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="brut-container">
+    <nav class="brut-nav">
+      <a href="index.html">HOME</a>
+      <a href="archive.html" class="active">ARCHIVE</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="connect.html">CONNECT</a>
+    </nav>
+    <header style="margin-bottom: var(--space-48); border-bottom: var(--border-blocky); padding-bottom: var(--space-24);">
+      <h1 style="font-size: 4rem;">SYSTEM ARCHIVE</h1>
+      <p style="font-size: 1.5rem; text-transform: uppercase;">Every transmission I've ever made. Indexed brutally.</p>
+    </header>
+    <main>
+      <div class="brut-table-wrapper">
+        <table class="brut-table">
+          <thead>
+            <tr>
+              <th>DATE</th>
+              <th>TITLE</th>
+              <th>TAGS</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{archive_rows}}
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

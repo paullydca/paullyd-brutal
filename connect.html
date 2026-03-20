@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paully D - Connect Protocol</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="brut-container">
+    <nav class="brut-nav">
+      <a href="index.html">HOME</a>
+      <a href="archive.html">ARCHIVE</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="connect.html" class="active">CONNECT</a>
+    </nav>
+    <header style="margin-bottom: var(--space-48); border-bottom: var(--border-blocky); padding-bottom: var(--space-24);">
+      <h1 style="font-size: 4rem;">INITIATE HANDSHAKE</h1>
+      <p style="font-size: 1.5rem; text-transform: uppercase;">Drop a message into the void. I might respond.</p>
+    </header>
+    <main>
+      <div class="brut-card">
+        <form>
+          <div class="brut-form-group">
+            <label class="brut-label" for="subject">SUBJECT_ID</label>
+            <input type="text" class="brut-input" id="subject" placeholder="IDENTIFY YOURSELF" required>
+          </div>
+          <div class="brut-form-group">
+            <label class="brut-label" for="comm">TRANSMISSION_PAYLOAD</label>
+            <textarea class="brut-textarea" id="comm" placeholder="ENTER MESSAGE" required></textarea>
+          </div>
+          <button type="button" class="brut-btn" onclick="alert('TRANSMISSION SENT SUCCESSFULLY.')" style="width: 100%;">TRANSMIT DATA</button>
+        </form>
+      </div>
+      
+      <div style="display: flex; align-items: center; justify-content: center; margin-top: var(--space-48); gap: var(--space-24);">
+        <a href="https://github.com" target="_blank" class="brut-btn ghost">GITHUB_SYS</a>
+        <a href="https://twitter.com" target="_blank" class="brut-btn ghost">X_NETWORK</a>
+        <a href="mailto:admin@localhost" class="brut-btn ghost">DIRECT_MAIL</a>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paully D - Why Web Design is Too Soft</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="brut-container">
+    <nav class="brut-nav">
+      <a href="index.html">HOME</a>
+      <a href="archive.html">ARCHIVE</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="connect.html">CONNECT</a>
+    </nav>
+    <div class="brut-breadcrumbs">
+      <a href="index.html">HOME</a>
+      <span class="separator">/</span>
+      <a href="#">POSTS</a>
+      <span class="separator">/</span>
+      <span style="text-transform: uppercase;">post-1</span>
+    </div>
+    
+    <header style="margin-bottom: var(--space-48); border-bottom: var(--border-blocky); padding-bottom: var(--space-24);">
+      <h1 style="font-size: 4rem; margin-bottom: var(--space-16);">WHY WEB DESIGN IS TOO SOFT</h1>
+      <div style="display: flex; gap: var(--space-8); flex-wrap: wrap;">
+        <span class="brut-badge" style="background: var(--color-text); color: var(--color-surface);">2026-03-19</span>
+        <span class="brut-badge">CSS</span>
+<span class="brut-badge">DESIGN</span>
+      </div>
+    </header>
+    
+    <main>
+      <article style="font-size: 1.25rem;">
+        <p>Take a look at any modern SaaS landing page today. What do you see? Soft, pill-shaped buttons taking 300 milliseconds to gently morph when you hover over them. Drop shadows rendered so softly they look like a faint fog. Gray text on a white background that requires squinting just to read the copyright.</p>
+<p><strong>Since when did web interfaces become pillows?</strong></p>
+<p>We&#39;ve lost our way. The internet used to be structural. When you clicked a button in Windows 95, you damn well knew you clicked it. The borders inverted instantly. The contrast was harsh, legible, and functional. It was software, not an ambient art installation.</p>
+<h3 style="margin-top: var(--space-32); margin-bottom: var(--space-16);">THE RETURN TO CONCRETE</h3>
+
+<p>That&#39;s why I&#39;ve adopted Brutalism for my own work. It&#39;s an anti-design philosophy drawn from 1950s architecture.</p>
+<div class="brut-alert danger">
+  <div>
+    <h3>CORE RULE: NO BLUR</h3>
+    <p style="margin: 0; font-size: 1rem;">If it casts a shadow, that shadow is solid <code>#111827</code> offset by exactly 4 pixels. Do not attempt to use <code>rgba(0,0,0,0.1)</code>. Real objects cast hard shadows.</p>
+  </div>
+</div>
+
+<p style="margin-top: var(--space-24);">When everything transitions instantly (0ms), the UI feels infinitely faster. Your users aren't waiting for a buttery CSS animation to finish before the browser registers their cognitive input.</p>
+
+<div class="brut-card" style="margin-top: var(--space-32);">
+  <div class="brut-card-header">
+    <h3>IMPLEMENTATION NOTES</h3>
+  </div>
+  <p>Setting up Brutalism is easy. Rip out your CSS frameworks. Define a harsh color palette (pure white, deep black, stark red). Remove all <code>border-radius</code> variables. Force outline states to a solid <code>3px</code> offset. Do this, and you strip away the fat.</p>
+  <p>Don't design for screenshots. Design to be used. Let's make the web raw again.</p>
+</div>
+
+      </article>
+
+      <section style="margin-top: var(--space-48); border-top: var(--border-blocky); padding-top: var(--space-24);">
+        <a href="index.html" class="brut-btn secondary">&larr; RETURN TO HOME DIRECTORY</a>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

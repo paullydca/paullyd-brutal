@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paully D - {{title}}</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="brut-container">
+    <nav class="brut-nav">
+      <a href="index.html">HOME</a>
+      <a href="archive.html">ARCHIVE</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="connect.html">CONNECT</a>
+    </nav>
+    <div class="brut-breadcrumbs">
+      <a href="index.html">HOME</a>
+      <span class="separator">/</span>
+      <a href="#">POSTS</a>
+      <span class="separator">/</span>
+      <span style="text-transform: uppercase;">{{slug}}</span>
+    </div>
+    
+    <header style="margin-bottom: var(--space-48); border-bottom: var(--border-blocky); padding-bottom: var(--space-24);">
+      <h1 style="font-size: 4rem; margin-bottom: var(--space-16);">{{title_upper}}</h1>
+      <div style="display: flex; gap: var(--space-8); flex-wrap: wrap;">
+        <span class="brut-badge" style="background: var(--color-text); color: var(--color-surface);">{{date}}</span>
+        {{tags_html}}
+      </div>
+    </header>
+    
+    <main>
+      <article style="font-size: 1.25rem;">
+        {{content}}
+      </article>
+
+      <section style="margin-top: var(--space-48); border-top: var(--border-blocky); padding-top: var(--space-24);">
+        <a href="index.html" class="brut-btn secondary">&larr; RETURN TO HOME DIRECTORY</a>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
