@@ -35,7 +35,7 @@
       <article style="font-size: 1.25rem;">
         <p>&quot;Don&#39;t deploy on Friday&quot; is the battle cry of engineers who don&#39;t trust their own infrastructure. If you are terrified of a push breaking the application right before the weekend, you have an engineering problem, not a scheduling problem.</p>
 <h3 style="margin-top: var(--space-32); margin-bottom: var(--space-16);">FEAR OF THE UNKNOWN</h3>
-I hear it all the time from consulting clients. They restrict merges from Thursday afternoon to Monday morning. 72 hours of halted delivery. Why?
+I hear it all the time from consulting clients. They restrict merges from Thursday afternoon to Monday morning. 72 hours of halted delivery. Why? When you are managing fragile WordPress deployments, this fear makes sense. WordPress updates can break plugins, themes, and entire databases unexpectedly. But when you build pure static websites, this fear vanishes entirely.
 
 <div class="brut-table-wrapper" style="margin-top: var(--space-16); margin-bottom: var(--space-24);">
   <table class="brut-table">
@@ -52,7 +52,7 @@ I hear it all the time from consulting clients. They restrict merges from Thursd
       </tr>
       <tr>
         <td>"It takes too long to rollback"</td>
-        <td>Your rollback procedure requires manual DB intervention.</td>
+        <td>Your rollback procedure requires manual DB intervention (like in WordPress).</td>
       </tr>
       <tr>
         <td>"We always catch bugs in prod"</td>
@@ -62,19 +62,19 @@ I hear it all the time from consulting clients. They restrict merges from Thursd
   </table>
 </div>
 
-<p>The Brutalist approach to CI/CD is strict, structural, and unforgiving. Your pipeline should enforce quality like a brick wall.</p>
+<p>The Brutalist approach to CI/CD is strict, structural, and unforgiving. Your pipeline should enforce quality like a brick wall. Website design shouldn&#39;t just be about how the frontend looks; true website design encompasses the entire structural delivery mechanism. When you decouple the frontend and serve static websites, your deployment pipeline becomes infinitely more reliable.</p>
 <div class="brut-card" style="margin-top: var(--space-32);">
   <div class="brut-card-header">
     <h3>THE PROTOCOL</h3>
   </div>
   <ol style="margin-left: var(--space-24); font-family: var(--font-mono); font-size: 1rem;">
-    <li style="margin-bottom: var(--space-8);"><strong>Automated Rollbacks:</strong> If the health check fails for 30 seconds post-deploy, the container orchestration immediately orchestrates a revert to the previous hash.</li>
-    <li style="margin-bottom: var(--space-8);"><strong>Feature Flags:</strong> You aren't shipping code on Friday. You're shipping dead code on Friday, and flipping a switch in a managed UI on Monday.</li>
-    <li style="margin-bottom: var(--space-8);"><strong>Aggressive Testing:</strong> E2E tests must pass. Not 99% of them. 100%. If a single flaky test fails, the build stops. Fix the test or revert the PR.</li>
+    <li style="margin-bottom: var(--space-8);"><strong>Automated Rollbacks:</strong> If the health check fails for 30 seconds post-deploy, the container orchestration immediately orchestrates a revert to the previous hash. With static websites, a rollback is just pointing traffic to the previous build bucket.</li>
+    <li style="margin-bottom: var(--space-8);"><strong>Feature Flags:</strong> You aren't shipping code on Friday. You're shipping dead code on Friday, and flipping a switch in a managed UI on Monday. This goes far beyond generic website design tactics.</li>
+    <li style="margin-bottom: var(--space-8);"><strong>Aggressive Testing:</strong> E2E tests must pass. Not 99% of them. 100%. If a single flaky test fails, the build stops. Fix the test or revert the PR. Stop relying on manual testing of WordPress admin panels.</li>
   </ol>
 </div>
 
-<p style="margin-top: var(--space-32);">I deployed this site on a Friday at 11:30 PM. I went to sleep. Nothing burned down. Trust the system.</p>
+<p style="margin-top: var(--space-32);">I deployed this site on a Friday at 11:30 PM. I went to sleep. Nothing burned down. Trust the system. Drop the monolithic servers, embrace static websites, and ship fearlessly.</p>
 
       </article>
 
