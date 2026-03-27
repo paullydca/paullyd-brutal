@@ -99,7 +99,62 @@ code, pre {
 @media (max-width: 900px) {
   .brut-grid-2, .brut-grid-3 { grid-template-columns: 1fr; }
   .brut-border-right { border-right: none; border-bottom: var(--border-blocky); }
-  .post-index-number { font-size: 8rem; }
+  .post-index-number { font-size: 6rem; }
+}
+
+@media (max-width: 768px) {
+  /* Override huge inline typography that bursts layout */
+  *[style*="font-size: 8rem"] { font-size: 4rem !important; line-height: 0.9 !important; letter-spacing: -2px !important; }
+  *[style*="font-size: 5rem"] { font-size: 3rem !important; }
+  *[style*="font-size: 4rem"] { font-size: 2.5rem !important; }
+  *[style*="font-size: 3rem"] { font-size: 2rem !important; }
+  
+  /* Container adjustments */
+  .brut-container {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    padding: var(--space-16);
+  }
+
+  /* Nav and Header stacking */
+  .brut-nav {
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: var(--space-16) !important;
+    gap: var(--space-24) !important;
+    text-align: center;
+  }
+  .brut-nav > div {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: var(--space-16) !important;
+  }
+
+  /* Padding adjustments to avoid horizontal squeeze */
+  *[style*="padding: var(--space-48)"] { padding: var(--space-24) !important; }
+  *[style*="padding: 120px"] { padding: var(--space-48) var(--space-16) !important; }
+  
+  /* Newsletter Form Stacking */
+  form.sendfox-form > div {
+    flex-direction: column !important;
+  }
+  form.sendfox-form > div[style*="border: var(--border-blocky)"] {
+    border: none !important;
+    background: transparent !important;
+    gap: var(--space-16) !important;
+  }
+  form.sendfox-form > div[style*="border: var(--border-blocky)"] > input {
+    border: var(--border-blocky) !important;
+  }
+  form.sendfox-form > div[style*="border: var(--border-blocky)"] > button {
+    border: var(--border-blocky) !important;
+    width: 100%;
+  }
+  
+  /* Footer adjustments */
+  footer *[style*="max-width: 250px"] { max-width: 100% !important; }
+  footer.brut-grid-3 { gap: var(--space-32) !important; }
 }
 
 /* --- Buttons --- */
