@@ -95,20 +95,15 @@ I hear it all the time from consulting clients. They restrict merges from Thursd
     <h2 style="font-size: 5rem; line-height: 1; margin-bottom: var(--space-32); background: var(--color-secondary); color: var(--color-text); padding: 0 var(--space-24); display: inline-block;">TRANSMISSION?</h2>
     <p style="font-size: 1.5rem; max-width: 600px; margin-bottom: var(--space-48);">Subscribe to the direct data feed. No soft landing pages, just raw changelogs.</p>
     
-    <form method="post" action="https://sendfox.com/form/1w6e80/3zogyz" class="sendfox-form" id="3zogyz" style="display: flex; flex-direction: column; gap: var(--space-16); max-width: 500px; width: 100%;">
-      <div style="display: flex; gap: var(--space-16); width: 100%;">
-        <input type="text" id="sendfox_form_name" name="first_name" class="brut-input" placeholder="FIRST NAME" required style="flex: 1; font-weight: 700; border: var(--border-blocky); min-width: 0;" />
-        <input type="text" id="sendfox_form_last_name" name="last_name" class="brut-input" placeholder="LAST NAME" required style="flex: 1; font-weight: 700; border: var(--border-blocky); min-width: 0;" />
-      </div>
-      <div style="display: flex; border: var(--border-blocky); background: var(--color-surface); width: 100%;">
-        <input type="email" id="sendfox_form_email" name="email" class="brut-input" placeholder="ENTER TERMINAL (EMAIL)" required style="border: none; flex: 1; font-weight: 700; min-width: 0;" />
-        <button type="submit" class="brut-btn" style="border: none; border-left: var(--border-blocky); box-shadow: none;">INITIATE</button>
-      </div>
-      <input type="hidden" name="redirect" value="https://paullydca.github.io/paullyd-brutal/index.html" />
-      <input type="hidden" name="return_url" value="https://paullydca.github.io/paullyd-brutal/index.html" />
+    <form method="post" action="https://sendfox.com/form/1w6e80/3zogyz" class="sendfox-form" id="3zogyz" data-async="true" data-recaptcha="true" style="display: flex; flex-direction: column; gap: var(--space-8); max-width: 500px; width: 100%; text-align: left;">
+      <p style="margin: 0; display: flex; flex-direction: column;"><label for="sendfox_form_name" class="brut-label" style="font-size: 1rem; margin-bottom: 4px;">First Name: </label><input type="text" id="sendfox_form_name" placeholder="FIRST NAME" name="first_name" class="brut-input" required style="font-weight: 700; border: var(--border-blocky);" /></p>
+      <p style="margin: 0; display: flex; flex-direction: column;"><label for="sendfox_form_last_name" class="brut-label" style="font-size: 1rem; margin-bottom: 4px;">Last Name: </label><input type="text" id="sendfox_form_last_name" placeholder="LAST NAME" name="last_name" class="brut-input" required style="font-weight: 700; border: var(--border-blocky);" /></p>
+      <p style="margin: 0; display: flex; flex-direction: column;"><label for="sendfox_form_email" class="brut-label" style="font-size: 1rem; margin-bottom: 4px;">Email: </label><input type="email" id="sendfox_form_email" placeholder="ENTER TERMINAL ADDRESS (EMAIL)" name="email" class="brut-input" required style="font-weight: 700; border: var(--border-blocky);" /></p>
       <!-- no botz please -->
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
+      <p style="margin-top: var(--space-16);"><button type="submit" class="brut-btn" style="width: 100%; justify-content: center; box-shadow: none; border: var(--border-blocky);">INITIATE SUBMISSION</button></p>
     </form>
+    <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
   </section>
 
   <!-- FOOTER -->
