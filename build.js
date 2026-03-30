@@ -47,6 +47,7 @@ for (const post of posts) {
     .replace(/\{\{title_upper\}\}/g, post.title.toUpperCase())
     .replace(/\{\{date\}\}/g, post.date)
     .replace(/\{\{slug\}\}/g, post.slug)
+    .replace(/\{\{description\}\}/g, post.snippet.replace(/"/g, '&quot;'))
     .replace(/\{\{tags_html\}\}/g, tagsHtml)
     .replace(/\{\{content\}\}/g, post.content);
     
