@@ -39,16 +39,16 @@
     </header>
     <main>
       <div class="brut-card">
-        <form>
+        <form method="POST" action="https://formspree.io/f/mnjodpkk">
           <div class="brut-form-group">
             <label class="brut-label" for="subject">SUBJECT_ID</label>
-            <input type="text" class="brut-input" id="subject" placeholder="IDENTIFY YOURSELF" required>
+            <input type="text" class="brut-input" id="subject" name="subject" placeholder="IDENTIFY YOURSELF" required>
           </div>
           <div class="brut-form-group">
             <label class="brut-label" for="comm">TRANSMISSION_PAYLOAD</label>
-            <textarea class="brut-textarea" id="comm" placeholder="ENTER MESSAGE" required></textarea>
+            <textarea class="brut-textarea" id="comm" name="message" placeholder="ENTER MESSAGE" required></textarea>
           </div>
-          <button type="button" class="brut-btn" onclick="alert('TRANSMISSION SENT SUCCESSFULLY.')" style="width: 100%;">TRANSMIT DATA</button>
+          <button type="submit" class="brut-btn" style="width: 100%;">TRANSMIT DATA</button>
         </form>
       </div>
       
