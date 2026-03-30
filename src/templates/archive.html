@@ -61,7 +61,7 @@
     <h2 style="font-size: 5rem; line-height: 1; margin-bottom: var(--space-32); background: var(--color-secondary); color: var(--color-text); padding: 0 var(--space-24); display: inline-block;">TRANSMISSION?</h2>
     <p style="font-size: 1.5rem; max-width: 600px; margin-bottom: var(--space-48);">Subscribe to the direct data feed. No soft landing pages, just raw changelogs.</p>
     
-    <form method="post" action="https://sendfox.com/form/1w6e80/3zogyz" class="sendfox-form" id="3zogyz" style="display: flex; flex-direction: column; gap: var(--space-16); max-width: 500px; width: 100%;">
+    <form method="post" action="https://sendfox.com/form/1w6e80/3zogyz" class="sendfox-form" id="3zogyz" data-async="true" data-recaptcha="true" style="display: flex; flex-direction: column; gap: var(--space-16); max-width: 500px; width: 100%;">
       <div style="display: flex; gap: var(--space-16); width: 100%;">
         <input type="text" id="sendfox_form_name" name="first_name" class="brut-input" placeholder="FIRST NAME" required style="flex: 1; font-weight: 700; border: var(--border-blocky); min-width: 0;" />
         <input type="text" id="sendfox_form_last_name" name="last_name" class="brut-input" placeholder="LAST NAME" required style="flex: 1; font-weight: 700; border: var(--border-blocky); min-width: 0;" />
@@ -70,10 +70,8 @@
         <input type="email" id="sendfox_form_email" name="email" class="brut-input" placeholder="ENTER TERMINAL (EMAIL)" required style="border: none; flex: 1; font-weight: 700; min-width: 0;" />
         <button type="submit" class="brut-btn" style="border: none; border-left: var(--border-blocky); box-shadow: none;">INITIATE</button>
       </div>
-
-      <!-- no botz please -->
-      <!-- honeypot removed to prevent autofill drops -->
     </form>
+    <script src="https://cdn.sendfox.com/js/form.js" charset="utf-8"></script>
   </section>
 
   <!-- FOOTER -->
