@@ -10,9 +10,9 @@ Let's break it down properly.
 
 ## What Is Headless WordPress?
 
-Traditional WordPress does everything in one place. You write a post, WordPress stores it in MySQL, renders it as HTML via PHP, and serves it to the visitor in a single monolithic stack. Headless WordPress cuts that in half.
+Traditional WordPress does everything in one place. You write a post, WordPress stores it in MySQL, renders it as HTML via PHP, and serves it to the visitor in a single <a href="wordpress-nightmare.html">monolithic stack</a>. Headless WordPress cuts that in half.
 
-In a headless setup, WordPress still lives on a server and still manages your content — posts, pages, media, users, all of it. But it no longer renders any HTML for visitors. Instead, it exposes your content through an API, typically the WP REST API or WQL (GraphQL via WPGraphQL plugin), and a completely separate front-end application fetches that data and handles all the rendering.
+In a headless setup, WordPress still lives on a server and still manages your content — posts, pages, media, users, all of it. But it no longer renders any HTML for visitors. Instead, it exposes your content through an API, typically the WP REST API or WQL (GraphQL via <a href="https://www.wpgraphql.com/" target="_blank" rel="noopener">WPGraphQL</a> plugin), and a completely separate front-end application fetches that data and handles all the rendering.
 
 Your content team still logs into the same familiar WordPress dashboard they already know. Your developers build the front-end in whatever framework they want.
 
@@ -30,7 +30,7 @@ That is a lot of moving parts. Count them: two hosting environments, a database,
 
 A static site generator takes your content — usually Markdown files with frontmatter metadata — and at build time compiles everything into plain HTML, CSS, and JavaScript files. There is no database. There is no server rendering pages on demand. The output is a folder of files that any static host can serve.
 
-Astro is currently the strongest option in this category for content-heavy sites. It ships zero JavaScript to the browser by default, supports Markdown natively, has a growing content collections API for managing structured content, and integrates cleanly with any CSS approach.
+<a href="top-8-static-site-frameworks.html">Astro is currently the strongest option</a> in this category for content-heavy sites. It ships zero JavaScript to the browser by default, supports Markdown natively, has a growing content collections API for managing structured content, and integrates cleanly with any CSS approach.
 
 **The Astro static site tech stack looks like this:**
 
@@ -53,7 +53,7 @@ The footprint is dramatically smaller. If you are storing content in Markdown fi
 
 ## The Disadvantages of Headless WordPress
 
-**Complexity and cost.** You are now maintaining two systems. The WordPress server needs updates, security patches, backups, and uptime monitoring. The front-end build pipeline needs maintenance too. When something breaks at 2am, you need to diagnose which half of the stack is the problem.
+**Complexity and cost.** You are now maintaining two systems. The WordPress server needs updates, security patches, backups, and uptime monitoring. The <a href="post-2.html">front-end build pipeline</a> needs maintenance too. When something breaks at 2am, you need to diagnose which half of the stack is the problem.
 
 **Build times.** On large sites with hundreds or thousands of posts, every content change triggers a full rebuild. Incremental builds help but add further configuration complexity.
 
@@ -65,7 +65,7 @@ The footprint is dramatically smaller. If you are storing content in Markdown fi
 
 **Speed.** Pre-rendered HTML served from a CDN edge node is about as fast as a website can get. There is no server rendering, no database query, no PHP execution on the critical path. A static site regularly scores 100 on Lighthouse with minimal effort.
 
-**Security.** No database means no SQL injection. No server-side execution means no remote code execution vectors. No WordPress admin panel means no brute force login attempts. The attack surface is essentially zero.
+**Security.** No database means no SQL injection. No server-side execution means no remote code execution vectors. No WordPress admin panel means no brute force login attempts. The <a href="static-security.html">attack surface is essentially zero</a>.
 
 **Cost.** Hosting a static site is free or near-free. GitHub Pages is free. Netlify's free tier handles most personal and small business sites without issue. The only costs are your domain and optional add-on services.
 

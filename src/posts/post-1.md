@@ -12,7 +12,7 @@ We've lost our way in modern website design. The internet used to be structural.
 
 <h3 style="margin-top: var(--space-32); margin-bottom: var(--space-16);">THE RETURN TO CONCRETE</h3>
 
-That's why I've adopted Brutalism for my own website design work. It's an anti-design philosophy drawn from 1950s architecture. While most designers are building fragile themes on top of bloated systems like WordPress, true brutalists are returning to static websites. Static websites strip away the unnecessary database calls and give you raw, blazing-fast HTML that doesn't need to apologize for being structural.
+That's why I've adopted <a href="https://brutalistwebsites.com/" target="_blank" rel="noopener">Brutalism</a> for my own website design work. It's an anti-design philosophy drawn from 1950s architecture. While most designers are building fragile themes on top of <a href="wordpress-nightmare.html">bloated systems like WordPress</a>, true brutalists are returning to static websites. Static websites strip away the unnecessary database calls and give you raw, blazing-fast HTML that doesn't need to apologize for being structural.
 
 <div class="brut-alert danger">
   <div>
@@ -21,7 +21,7 @@ That's why I've adopted Brutalism for my own website design work. It's an anti-d
   </div>
 </div>
 
-<p style="margin-top: var(--space-24);">When everything transitions instantly (0ms), the UI feels infinitely faster. Your users aren't waiting for a buttery CSS animation to finish before the browser registers their cognitive input. They don't have to wait for a monolithic WordPress server to render the page layout. Moving away from WordPress and embracing static websites means delivering uncompromised speeds.</p>
+<p style="margin-top: var(--space-24);">When everything transitions instantly (0ms), the UI feels infinitely faster. Your users aren't waiting for a buttery CSS animation to finish before the browser registers their cognitive input. They don't have to wait for a monolithic WordPress server to render the page layout. Moving away from WordPress and embracing <a href="top-8-static-site-frameworks.html">static websites</a> means delivering uncompromised speeds.</p>
 
 <div class="brut-card" style="margin-top: var(--space-32);">
   <div class="brut-card-header">

@@ -5,7 +5,7 @@ tags: ["STATIC", "FRAMEWORKS", "REVIEW"]
 slug: "top-8-static-site-frameworks"
 ---
 
-The bloated dynamic web is dying under its own weight. We are returning to the concrete. We are returning to static. A static website delivers raw HTML—no database queries, no server-side rendering bottlenecks, no unnecessary complexity when serving content. It is just files on a CDN.
+The <a href="wordpress-nightmare.html">bloated dynamic web</a> is dying under its own weight. We are returning to the concrete. We are returning to static. A static website delivers raw HTML—no database queries, no server-side rendering bottlenecks, no unnecessary complexity when serving content. It is just files on a CDN.
 
 But building static sites by hand is archaic. We need generators. We need frameworks that compile markdown, inject components, and spit out optimized HTML CSS and JS. Today, I'm ranking the top 8 static site frameworks. If you are serious about performance, reliability, and security, you choose one of these.
 
@@ -13,7 +13,7 @@ But building static sites by hand is archaic. We need generators. We need framew
   <div class="brut-card-header">
     <h3 style="font-size: 2rem;">#1. ASTRO</h3>
   </div>
-  <p><strong>Astro is the undisputed king.</strong> It was built from the ground up to solve the problem of delivering too much JavaScript to the client. It uses a concept called "Islands Architecture" which means your site is static HTML by default, and you only hydrate the specific components that need interactivity.</p>
+  <p><strong><a href="https://astro.build" target="_blank" rel="noopener">Astro</a> is the undisputed king.</strong> It was built from the ground up to solve the problem of delivering too much JavaScript to the client. It uses a concept called "Islands Architecture" which means your site is static HTML by default, and you only hydrate the specific components that need interactivity.</p>
   
   <h4>THE PROS:</h4>
   <ul style="padding-left: var(--space-24); margin-bottom: var(--space-16);">
@@ -172,7 +172,7 @@ But building static sites by hand is archaic. We need generators. We need framew
 </div>
 
 <h3>CONCLUSION: CHOOSE YOUR WEAPON</h3>
-<p style="margin-top: var(--space-24);">If you want the absolute fastest end-user experience without sacrificing modern component architecture, <strong>Astro is the clear winner</strong>. Its Islands Architecture is the most significant leap forward in static generation in recent years.</p>
+<p style="margin-top: var(--space-24);">If you want the absolute fastest end-user experience without sacrificing modern component architecture, <strong><a href="headless-wp-vs-astro.html">Astro is the clear winner</a></strong>. Its Islands Architecture is the most significant leap forward in static generation in recent years.</p>
 <p>If you want pure, unadulterated speed with raw templates, choose <strong>11ty or Hugo</strong>.</p>
 <p>If you are building an app that happens to need some static pages, stick with <strong>Next.js or SvelteKit</strong>.</p>
 <p>Stop over-engineering. Write markdown. Generate HTML. Serve instantly. That is the Brutalist way.</p>

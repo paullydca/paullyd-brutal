@@ -72,8 +72,8 @@
         <p>Everyone wants a fast, modern website. The two paths that keep coming up in the same breath are headless WordPress and static site generators like Astro. On the surface they sound similar — both produce fast front-ends, both decouple your content from your presentation layer. But under the hood they are fundamentally different bets, and picking the wrong one will cost you time, money, and your sanity.</p>
 <p>Let&#39;s break it down properly.</p>
 <h2>What Is Headless WordPress?</h2>
-<p>Traditional WordPress does everything in one place. You write a post, WordPress stores it in MySQL, renders it as HTML via PHP, and serves it to the visitor in a single monolithic stack. Headless WordPress cuts that in half.</p>
-<p>In a headless setup, WordPress still lives on a server and still manages your content — posts, pages, media, users, all of it. But it no longer renders any HTML for visitors. Instead, it exposes your content through an API, typically the WP REST API or WQL (GraphQL via WPGraphQL plugin), and a completely separate front-end application fetches that data and handles all the rendering.</p>
+<p>Traditional WordPress does everything in one place. You write a post, WordPress stores it in MySQL, renders it as HTML via PHP, and serves it to the visitor in a single <a href="wordpress-nightmare.html">monolithic stack</a>. Headless WordPress cuts that in half.</p>
+<p>In a headless setup, WordPress still lives on a server and still manages your content — posts, pages, media, users, all of it. But it no longer renders any HTML for visitors. Instead, it exposes your content through an API, typically the WP REST API or WQL (GraphQL via <a href="https://www.wpgraphql.com/" target="_blank" rel="noopener">WPGraphQL</a> plugin), and a completely separate front-end application fetches that data and handles all the rendering.</p>
 <p>Your content team still logs into the same familiar WordPress dashboard they already know. Your developers build the front-end in whatever framework they want.</p>
 <p><strong>The headless WordPress tech stack looks like this:</strong></p>
 <ul>
@@ -86,7 +86,7 @@
 <p>That is a lot of moving parts. Count them: two hosting environments, a database, an API layer, a build pipeline, and webhook infrastructure. Every one of those is a potential point of failure and a line item on your invoice.</p>
 <h2>What Is a Static Site Generator Like Astro?</h2>
 <p>A static site generator takes your content — usually Markdown files with frontmatter metadata — and at build time compiles everything into plain HTML, CSS, and JavaScript files. There is no database. There is no server rendering pages on demand. The output is a folder of files that any static host can serve.</p>
-<p>Astro is currently the strongest option in this category for content-heavy sites. It ships zero JavaScript to the browser by default, supports Markdown natively, has a growing content collections API for managing structured content, and integrates cleanly with any CSS approach.</p>
+<p><a href="top-8-static-site-frameworks.html">Astro is currently the strongest option</a> in this category for content-heavy sites. It ships zero JavaScript to the browser by default, supports Markdown natively, has a growing content collections API for managing structured content, and integrates cleanly with any CSS approach.</p>
 <p><strong>The Astro static site tech stack looks like this:</strong></p>
 <ul>
 <li><strong>Content:</strong> Markdown or MDX files in your repository, or a headless CMS like Contentful, Sanity, or Storyblok feeding data at build time</li>
@@ -101,13 +101,13 @@
 <p><strong>Non-developer content workflows.</strong> Writers can publish without touching a code repository. A new post does not require a pull request. This matters enormously in a team environment where developers should not be a bottleneck for content updates.</p>
 <p><strong>Plugin ecosystem.</strong> SEO tools, form builders, analytics integrations, e-commerce, events — the WordPress plugin library covers nearly every business requirement without custom development.</p>
 <h2>The Disadvantages of Headless WordPress</h2>
-<p><strong>Complexity and cost.</strong> You are now maintaining two systems. The WordPress server needs updates, security patches, backups, and uptime monitoring. The front-end build pipeline needs maintenance too. When something breaks at 2am, you need to diagnose which half of the stack is the problem.</p>
+<p><strong>Complexity and cost.</strong> You are now maintaining two systems. The WordPress server needs updates, security patches, backups, and uptime monitoring. The <a href="post-2.html">front-end build pipeline</a> needs maintenance too. When something breaks at 2am, you need to diagnose which half of the stack is the problem.</p>
 <p><strong>Build times.</strong> On large sites with hundreds or thousands of posts, every content change triggers a full rebuild. Incremental builds help but add further configuration complexity.</p>
 <p><strong>The plugin problem.</strong> Many WordPress plugins assume they control the front-end. SEO plugins, caching plugins, page builders — half the plugin ecosystem becomes irrelevant or actively breaks in a headless setup. You lose one of WordPress&#39;s biggest advantages.</p>
 <p><strong>Cost.</strong> A properly hosted WordPress backend on WP Engine or Kinsta starts at $25-$35 per month minimum. Add front-end hosting, and you are paying for infrastructure even for a small site.</p>
 <h2>The Advantages of Static Site Generators Like Astro</h2>
 <p><strong>Speed.</strong> Pre-rendered HTML served from a CDN edge node is about as fast as a website can get. There is no server rendering, no database query, no PHP execution on the critical path. A static site regularly scores 100 on Lighthouse with minimal effort.</p>
-<p><strong>Security.</strong> No database means no SQL injection. No server-side execution means no remote code execution vectors. No WordPress admin panel means no brute force login attempts. The attack surface is essentially zero.</p>
+<p><strong>Security.</strong> No database means no SQL injection. No server-side execution means no remote code execution vectors. No WordPress admin panel means no brute force login attempts. The <a href="static-security.html">attack surface is essentially zero</a>.</p>
 <p><strong>Cost.</strong> Hosting a static site is free or near-free. GitHub Pages is free. Netlify&#39;s free tier handles most personal and small business sites without issue. The only costs are your domain and optional add-on services.</p>
 <p><strong>Developer experience.</strong> Astro&#39;s local development server, hot module reload, and TypeScript support make it genuinely pleasant to build in. Your entire project lives in one Git repository. Deploying is a <code>git push</code>.</p>
 <p><strong>Simplicity.</strong> Fewer moving parts means fewer things to break, fewer services to monitor, and less time spent on maintenance rather than building.</p>

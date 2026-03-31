@@ -4,7 +4,7 @@ date: "2026-03-25"
 tags: ["SECURITY", "ARCHITECTURE"]
 slug: "static-security"
 ---
-There is a massive, structural flaw in how we build the web today. We prioritize convenience over defense. We install heavy CMS platforms, load them with dozens of black-box plugins, and wire them up to a live relational database simply to display text to a user. This approach to website design is fundamentally insecure. By defaulting to platforms like WordPress, developers are unknowingly deploying massive liabilities onto their web servers.
+There is a massive, structural flaw in how we build the web today. We prioritize convenience over defense. We install heavy CMS platforms, load them with dozens of black-box plugins, and wire them up to a live relational database simply to display text to a user. This approach to website design is fundamentally insecure. By defaulting to <a href="wordpress-nightmare.html">platforms like WordPress</a>, developers are unknowingly deploying massive liabilities onto their web servers.
 
 <h3 style="margin-top: var(--space-32); margin-bottom: var(--space-16);">THE INFINITE ATTACK SURFACE</h3>
 
@@ -13,7 +13,7 @@ Every time you install a third-party plugin on a dynamic CMS, you are extending 
 <div class="brut-alert danger" style="margin-top: var(--space-24); margin-bottom: var(--space-24);">
   <div>
     <h3>DYNAMIC = VULNERABLE</h3>
-    <p style="margin: 0; font-size: 1rem;">If your server executes PHP, queries MySQL, and handles dynamic routing on every page load, you are inherently vulnerable to SQL injections, XSS, and remote code execution. Monolithic databases are liabilities.</p>
+    <p style="margin: 0; font-size: 1rem;">If your server executes PHP, queries MySQL, and handles dynamic routing on every page load, you are inherently vulnerable to <a href="https://owasp.org/www-project-top-ten/" target="_blank" rel="noopener">SQL injections, XSS, and remote code execution</a>. Monolithic databases are liabilities.</p>
   </div>
 </div>
 
@@ -29,7 +29,7 @@ You cannot crash the WordPress database if there is no database.
   <div class="brut-card-header">
     <h3>ZERO RUNTIME</h3>
   </div>
-  <p>With a Static Site Generator, the "computation" happens locally on your machine during the build phase. What touches the internet is just inert data. It is the ultimate defensive architecture for modern website design: you can't break what isn't moving. Static websites strip the attack surface down to zero.</p>
+  <p>With a <a href="top-8-static-site-frameworks.html">Static Site Generator</a>, the "computation" happens locally on your machine during the build phase. What touches the internet is just inert data. It is the ultimate defensive architecture for modern website design: you can't break what isn't moving. Static websites strip the attack surface down to zero.</p>
 </div>
 
 Rip out the plugins. Flatten your output. Replace your vulnerable WordPress installations with incredibly fast, unhackable static websites. The safest server is the one that only knows how to serve raw text.
